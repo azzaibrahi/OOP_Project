@@ -33,7 +33,9 @@ namespace OOP_Project
         {
             PracticalExam copy = new PracticalExam(Time, NumberOfQuestions, Subject);
             for (int i = 0; i < Questions.Length; i++)
-                copy.Questions[i] = (Question)Questions[i].Clone();
+
+                copy.Questions[i] = (Question)Questions[i].Clone();  // Deep copy and Casting
+
             return copy;
         }
 

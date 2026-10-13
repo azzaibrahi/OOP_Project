@@ -5,10 +5,12 @@ using System.Text;
 namespace OOP_Project
 {
     public class FinalExam : Exam
-    {
+    { 
+         //  additional properties 
         public int Grade { get; set; }
         public int TotalMarks { get; set; }
 
+        //base constructor 
         public FinalExam(int time, int numberOfQuestions, Subject subject)
             : base(time, numberOfQuestions, subject)
         {
@@ -36,6 +38,7 @@ namespace OOP_Project
 
             Console.WriteLine($"Your Grade: {Grade} / {TotalMarks}");
         }
+          
         public override object Clone()
         {
             FinalExam copy = new FinalExam(Time, NumberOfQuestions, Subject);
@@ -48,7 +51,7 @@ namespace OOP_Project
         {
             return "[Final Exam] " + base.ToString();
         }
-
+       
 
     }
 }

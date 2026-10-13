@@ -6,21 +6,22 @@ using System.Text;
 namespace OOP_Project
 {
     public abstract class Exam : ICloneable, IComparable<Exam>
-    {
+    {        
+              //Properties
         public int Time { get; set; }
         public int NumberOfQuestions { get; set; }
         public Question[] Questions { get; set; }
-        public Subject Subject { get; set; }
+        public Subject Subject { get; set; }      //Nevegational property to Subject class
 
         protected Exam(int time, int numberOfQuestions, Subject subject)
         {
             Time = time;
-            NumberOfQuestions = numberOfQuestions;
-            Subject = subject;
+               NumberOfQuestions = numberOfQuestions;
+           Subject = subject;
             Questions = new Question[numberOfQuestions];
         }
 
-        public abstract object Clone();
+       
 
        
          public override string ToString()
@@ -43,6 +44,9 @@ namespace OOP_Project
 
             }
     public abstract void ShowExam();
+
+
+        public abstract object Clone();
     }
     }
 

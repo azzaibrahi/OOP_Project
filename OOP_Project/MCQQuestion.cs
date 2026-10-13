@@ -27,7 +27,7 @@ namespace OOP_Project
             {
                      copiedAnswers[i] = (Answer)AnswerList[i].Clone();
                 if (AnswerList[i]   ==   RightAnswer)
-                    copiedRight = copiedAnswers[i];
+             copiedRight = copiedAnswers[i];
             }
 
             return new MCQQuestion(Header, Body, Mark, copiedAnswers, copiedRight);

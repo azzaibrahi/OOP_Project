@@ -8,7 +8,7 @@ namespace OOP_Project
     {
         public int SubjectId { get; set; }
         public string SubjectName { get; set; }
-        public Exam Exam { get; set; }
+        public Exam Exam { get; set; }     //Navigation property to Exam class
 
         public Subject(int subjectId) : this(subjectId, "")
         {

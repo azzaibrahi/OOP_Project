@@ -5,7 +5,7 @@ using System.Text;
 namespace OOP_Project
 {
     public class TrueFalseQuestion : Question
-    {
+    {      //base constructor  as they will be set in the constructor
         public TrueFalseQuestion(string header, string body, int mark, bool correctValue)
         : base(header, body, mark, null, null)
         {
